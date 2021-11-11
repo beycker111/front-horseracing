@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bg-config{
+  background-color: blueviolet;
+}
+
+.pr-1{
+  padding-right: 1em;
+}
+
+.mr-1 {
+  margin-right: 5px;
+}
+
+.mr-3{
+  margin-right: 3em;
+}
+
+.bg-image{
+  background-image: url("resources/campomedianotransparente.png");
+  height: 768px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #C3BDE9;
+}
+
+.pi-jinete{
+  margin-left: 150px;
+  display: none;
+}
