@@ -9,6 +9,7 @@ const Configuracion = ({dispatch, jugando, jinetes, loading, kmpista}) => {
 
     const onAdd = () => {
         let nombre = document.getElementById('jugador').value;
+        document.getElementById('jugador').value = '';
         dispatch(addJinete({nombre, color}));
         //console.log(jinetes)
     }
@@ -23,9 +24,8 @@ const Configuracion = ({dispatch, jugando, jinetes, loading, kmpista}) => {
             kmSelected = 50;
         }
 
-
         dispatch(sendDataToStart({kilometros: kmSelected, jinetes }));
-        dispatch(startGame());
+        //dispatch(startGame());
     }
 
     const onCheckChange = (wichkm) => {
@@ -81,11 +81,11 @@ const Configuracion = ({dispatch, jugando, jinetes, loading, kmpista}) => {
                     <button type="button" className="btn btn-dark mr-1" onClick={() => setColor('negro')}>🙂</button>
                     <button type="button" className="btn btn-warning mr-3" onClick={() => setColor('amarillo')}>🙂</button>
 
-                    <button type="button" className="btn btn-light mr-1" onClick={onAdd}>Agregar Jinete</button>
+                    <button type="button" className="btn c-button mr-1" onClick={onAdd}>Agregar Jinete</button>
                 </div>
 
                 <div align="center">
-                    <button type="button" className="btn btn-light"  onClick={onInit}>Iniciar Carrera</button>
+                    <button type="button" className="btn c-button"  onClick={onInit}>Iniciar Carrera</button>
                 </div>
             </div>
         </>

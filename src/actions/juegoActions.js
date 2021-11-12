@@ -43,10 +43,8 @@ export function sendDataToStart(payload){
             )
 
             //la respuesta del servidor quizás sea solo el ID
-            dispatch({
-                type: INICIAR,
-                payload: response
-            })
+            dispatch({type: INICIAR})
+            dispatch(success({id: response})) //aqui almacenamos el id en el sorage y cambiamos el loading a false
 
 
         } catch (error) {
@@ -58,6 +56,22 @@ export function sendDataToStart(payload){
 export function startGame(){
     return async dispatch => {
         dispatch({ type: INICIAR })
+    }
+
+}
+
+export function execLoading(){
+    //ese async deberiamos quitarlo
+    return async dispatch => {
+        dispatch(loading());
+    }
+
+}
+
+export function execSuccess(payload){
+    //ese async deberiamos quitarlo
+    return async dispatch => {
+        dispatch(success(payload));
     }
 
 }

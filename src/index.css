@@ -40,3 +40,32 @@ code {
   margin-left: 150px;
   display: none;
 }
+
+.textdark-bgwhite{
+  color: black;
+  background-color: white;
+}
+
+.textwhite-bgdark{
+  color: white;
+  background-color: black;
+}
+
+.span-fix {
+  display: inline-block;
+  width: 180px;
+}
+
+.ilb {
+  display: inline-block;
+}
+
+.c-button{
+  background-color: #4B1874;
+  color: white;
+}
+
+.c-button:hover{
+  background-color: white;
+  color: #4B1874;
+}
