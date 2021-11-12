@@ -25,7 +25,7 @@ const Pista = ({dispatch, jugando, jinetes, loading, podio}) => {
         //se finalice el movimiento y almacenamieto en el storage de las nuevas distancias
         data.jinetes.forEach((jin, i) => {
             document.getElementById('j' + (i+1)).style.display = "inline";
-            document.getElementById('j' + (i+1)).style.marginLeft = 150 + i + "px";
+            document.getElementById('j' + (i+1)).style.marginLeft = 150 + i + "px"; //No es mas i sino mas la nueva distancia que me llega del back
         });
 
         //finalizar la carga para esperar el siguiente evento del back

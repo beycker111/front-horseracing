@@ -44,7 +44,7 @@ export function sendDataToStart(payload){
 
             //la respuesta del servidor quizás sea solo el ID
             dispatch({type: INICIAR})
-            dispatch(success({id: response})) //aqui almacenamos el id en el sorage y cambiamos el loading a false
+            dispatch(success({id: response})) //aqui almacenamos el id en el storage y cambiamos el loading a false
 
 
         } catch (error) {
